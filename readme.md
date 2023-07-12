@@ -9,7 +9,7 @@ npm i vk_api
 ### Step 1: Create VK API instance
 
 You can logged in with use login and password:
-```nodejs
+```node
 const vkApi = require('vk_api');
 const vk = new vkApi.VkApi({
 	login    : '+78005553535',
