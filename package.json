@@ -1,5 +1,32 @@
 {
   "dependencies": {
     "sync-request": "^6.1.0"
-  }
+  },
+  "name": "vk_api",
+  "description": "**installation:**\r ```bash\r npm i vk_api\r ```\r ## How to use",
+  "version": "0.0.1",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikiroy78/npm-vk-api-sync.git"
+  },
+  "keywords": [
+    "vk_api",
+    "vkApi",
+    "requests",
+    "API",
+    "vk",
+    "vkontakte",
+    "sync"
+  ],
+  "author": "FullGreaM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikiroy78/npm-vk-api-sync/issues"
+  },
+  "homepage": "https://github.com/Nikiroy78/npm-vk-api-sync#readme"
 }

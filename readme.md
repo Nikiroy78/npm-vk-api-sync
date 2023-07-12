@@ -2,7 +2,7 @@
 
 **installation:**
 ```bash
-npm i vk_api
+npm i vk-api-sync
 ```
 ## How to use
 
@@ -10,7 +10,7 @@ npm i vk_api
 
 You can logged in with use login and password:
 ```node
-const vkApi = require('vk_api');
+const vkApi = require('vk-api-sync');
 const vk = new vkApi.VkApi({
 	login    : '+78005553535',
 	password : 'qwerty123'
@@ -18,7 +18,7 @@ const vk = new vkApi.VkApi({
 ```
 or with use access_token
 ```node
-const vkApi = require('vk_api');
+const vkApi = require('vk-api-sync');
 const vk = new vkApi.VkApi({
 	access_token : "ACCESS_TOKEN_STRING"
 });
@@ -26,7 +26,7 @@ const vk = new vkApi.VkApi({
 **Additional parametrs**  
 In constructor you can edit **api_version**, **api_server** and **oauth_server**:
 ```node
-const vkApi = require('vk_api');
+const vkApi = require('vk-api-sync');
 const authOptions = { /* Another auth params */ };
 
 const API_VERSION = "5.75";
