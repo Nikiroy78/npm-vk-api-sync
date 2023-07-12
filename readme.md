@@ -17,7 +17,7 @@ const vk = new vkApi.VkApi({
 });
 ```
 or with use access_token
-```nodejs
+```node
 const vkApi = require('vk_api');
 const vk = new vkApi.VkApi({
 	access_token : "ACCESS_TOKEN_STRING"
@@ -25,7 +25,7 @@ const vk = new vkApi.VkApi({
 ```
 **Additional parametrs**  
 In constructor you can edit **api_version**, **api_server** and **oauth_server**:
-```nodejs
+```node
 const vkApi = require('vk_api');
 const authOptions = { /* Another auth params */ };
 
@@ -42,21 +42,21 @@ const vk = new vkApi.VkApi(
 ```
 ### Step 2: Call VK API Methods
 You can use method **api** for call api methods.
-```nodejs
+```node
 const userObject = vk.api("users.get", {
 	user_ids : [1].join(",")
 }); // [{ id : 1, first_name : "Pavel", last_name : "Durov" }]
 ```
 ### Additional tools
 You can use method **exec** for call api method **Execute**.
-```nodejs
+```node
 const vkScript = `var userObject = API.users.get({"user_ids":[1]});
 
 return userObject[0];`;
 const userObject = vk.exec(vkScript); // { id : 1, first_name : "Pavel", last_name : "Durov" }
 ```
 And you can use additional tool for upload doc into server. Use method **uploadDoc** *(method at beta-develop)*  
-```nodejs
+```node
 const fs = require('fs');
 
 const filename = "picture.png";
